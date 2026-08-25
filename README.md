@@ -8,7 +8,9 @@
 <p align="center">
   <sub><b>Go</b> · <b>Kubernetes</b> · Platform engineering · Automotive firmware</sub>
 </p>
+
 <br>
+
 ## About
 
 I got into this because I liked taking things apart to see why they broke. That instinct got me into automotive: bootloaders, AUTOSAR, diagnostics, secure boot — a world where you can't just redeploy on Friday afternoon, because your code is now inside somebody's car doing 120 on the AP-7.
@@ -70,13 +72,28 @@ My favourite part isn't the demo — it's the README section on what happens whe
   </td>
   </tr>
   <tr>
-    <td colspan="2" valign="top">
+    <td width="50%" valign="top">
 
-### [llm-gateway](https://github.com/Mampiz/llm-gateway) &nbsp;<sub><i>work in progress, don't judge</i></sub>
+### [BirdVision](https://github.com/Mampiz/Automatic-bird-identification-system)
+
+`YOLO12` · `FastAPI` · `React` · `AWS`
+
+My final degree project at UPC, built with a local environmental association. Point a camera at a drinking trough — or upload a video — and it tells you which bird species showed up, where and when.
+
+Two-stage YOLO12 training (101 species, mAP@0.5 of 0.910 on my own validation split), async video jobs, and an RTMP→HLS pipeline that draws boxes on a live stream. [Live demo](https://automatic-bird-identification-syste.vercel.app).
+
+  </td>
+    <td width="50%" valign="top">
+
+### [llm-gateway](https://github.com/Mampiz/llm-gateway)
 
 `Go` · `concurrency` · `Redis`
 
-A proxy in front of multiple model providers: one API, streaming, distributed rate limiting, failover and caching. Mostly an excuse to write concurrent Go that's harder than a worker-pool tutorial.
+*Work in progress, don't judge.*
+
+A proxy in front of multiple model providers: one API, streaming, distributed rate limiting, failover and caching.
+
+Mostly an excuse to write concurrent Go that's harder than a worker-pool tutorial.
 
   </td>
   </tr>
@@ -93,5 +110,5 @@ A proxy in front of multiple model providers: one API, streaming, distributed ra
 </p>
 
 <p align="center">
-  <sub>Barcelona · open to remote 
+  <sub>Barcelona · open to remote</sub>
 </p>
