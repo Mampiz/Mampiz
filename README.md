@@ -54,7 +54,7 @@ Outside of that: I'm from here, I speak Spanish and Catalan, and I will absolute
 
 `Go` · `controller-runtime` · `Kubernetes`
 
-A Kubernetes operator. You write one small `WebApp` resource and it takes care of the Deployment, the Service, the autoscaler and the disruption budget — forever.
+A Kubernetes operator. You write one small `WebApp` resource and it takes care of the Deployment, the Service, the autoscaler and the disruption budget forever.
 
 Admission webhooks, Prometheus metrics, a Grafana dashboard, and scale numbers I actually measured instead of vibing.
 
@@ -67,7 +67,7 @@ Admission webhooks, Prometheus metrics, a Grafana dashboard, and scale numbers I
 
 An Internal Developer Platform. Fill in a form and, before you finish reading the confirmation page, you have a GitHub repo with CI *and* a live workload in Kubernetes.
 
-My favourite part isn't the demo — it's the README section on what happens when it half-fails. Turns out that's the interesting engineering.
+My favourite part isn't the demo, it's the README section on what happens when it half-fails. Turns out that's the interesting engineering.
 
   </td>
   </tr>
@@ -78,7 +78,7 @@ My favourite part isn't the demo — it's the README section on what happens whe
 
 `YOLO12` · `FastAPI` · `React` · `AWS`
 
-My final degree project at UPC, built with a local environmental association. Point a camera at a drinking trough — or upload a video — and it tells you which bird species showed up, where and when.
+My final degree project at UPC, built with a local environmental association. Point a camera at a drinking trough, or upload a video, and it tells you which bird species showed up, where and when.
 
 Two-stage YOLO12 training (101 species, mAP@0.5 of 0.910 on my own validation split), async video jobs, and an RTMP→HLS pipeline that draws boxes on a live stream. [Live demo](https://automatic-bird-identification-syste.vercel.app).
 
