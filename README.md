@@ -8,9 +8,7 @@
 <p align="center">
   <sub><b>Go</b> · <b>Kubernetes</b> · Platform engineering · Automotive firmware</sub>
 </p>
-
 <br>
-
 ## About
 
 I got into this because I liked taking things apart to see why they broke. That instinct got me into automotive: bootloaders, AUTOSAR, diagnostics, secure boot — a world where you can't just redeploy on Friday afternoon, because your code is now inside somebody's car doing 120 on the AP-7.
