@@ -12,7 +12,6 @@
 <p align="center">
   <a href="https://github.com/Mampiz?tab=repositories"><img src="https://img.shields.io/badge/-Projects-0d1117?style=for-the-badge&labelColor=0d1117&color=1f6feb" alt="Projects"/></a>
   <a href="https://linkedin.com/in/josep-mampel-marques"><img src="https://img.shields.io/badge/-LinkedIn-0d1117?style=for-the-badge&labelColor=0d1117&color=30363d" alt="LinkedIn"/></a>
-  <a href="mailto:josepmampel20@gmail.com"><img src="https://img.shields.io/badge/-Email-0d1117?style=for-the-badge&labelColor=0d1117&color=30363d" alt="Email"/></a>
 </p>
 
 <br>
