@@ -90,20 +90,6 @@ A proxy in front of multiple model providers: one API, streaming, distributed ra
   </tr>
 </table>
 
-<br>
-
-## Opinions I'll defend
-
-> **`latest` is a promise you can't keep.** My operator rejects it and tells you why.
->
-> **If you didn't measure it, don't put a number on it.**
->
-> **Everyone gets the happy path right.** The interesting part is the failure path.
->
-> **Docs you didn't write don't exist.**
-
-<br>
-
 ---
 
 <p align="center">
