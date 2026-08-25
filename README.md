@@ -9,11 +9,6 @@
   <sub><b>Go</b> · <b>Kubernetes</b> · Platform engineering · Automotive firmware</sub>
 </p>
 
-<p align="center">
-  <a href="https://github.com/Mampiz?tab=repositories"><img src="https://img.shields.io/badge/-Projects-0d1117?style=for-the-badge&labelColor=0d1117&color=1f6feb" alt="Projects"/></a>
-  <a href="https://linkedin.com/in/josep-mampel-marques"><img src="https://img.shields.io/badge/-LinkedIn-0d1117?style=for-the-badge&labelColor=0d1117&color=30363d" alt="LinkedIn"/></a>
-</p>
-
 <br>
 
 ## About
@@ -100,5 +95,5 @@ A proxy in front of multiple model providers: one API, streaming, distributed ra
 </p>
 
 <p align="center">
-  <sub>Barcelona · open to remote · currently looking for platform / cloud infrastructure roles</sub>
+  <sub>Barcelona · open to remote 
 </p>
