@@ -74,7 +74,7 @@ My favourite part isn't the demo — it's the README section on what happens whe
   <tr>
     <td width="50%" valign="top">
 
-### [BirdVision](https://github.com/Mampiz/Automatic-bird-identification-system)
+### [BirdVision](https://github.com/Mampiz/birdvision)
 
 `YOLO12` · `FastAPI` · `React` · `AWS`
 
