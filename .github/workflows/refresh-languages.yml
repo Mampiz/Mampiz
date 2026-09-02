@@ -1,0 +1,38 @@
+name: refresh language card
+
+# The language mix on the profile is generated here rather than fetched from a
+# hosted stats service, so it cannot break when somebody else's free tier does.
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # Mondays, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate docs/assets/languages.svg
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/languages.py
+
+      - name: Commit if it changed
+        run: |
+          if git diff --quiet -- docs/assets/languages.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/languages.svg
+          git commit -m "chore: refresh language card"
+          git push

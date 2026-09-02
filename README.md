@@ -1,8 +1,8 @@
 <h1 align="center">Josep Mampel Marqués</h1>
 
 <p align="center">
-  Software engineer in Barcelona — embedded automotive code by day,<br>
-  Kubernetes controllers by night. Confusing elevator pitch, fun life.
+  <img src="docs/assets/intro.gif" width="740"
+       alt="Terminal session: whoami — Josep Mampel Marqués, Barcelona. Day job: embedded automotive, bootloaders, AUTOSAR, diagnostics, secure boot. Night job: Kubernetes controllers in Go. Looking for platform / cloud infrastructure.">
 </p>
 
 <p align="center">
@@ -46,9 +46,14 @@ Outside of that: I'm from here, I speak Spanish and Catalan, and I will absolute
 
 ## What I've been building
 
+Every image below is a real recording from the repository it sits next to.
+
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="44%" valign="top">
+      <a href="https://github.com/Mampiz/provenance-gate"><img src="https://raw.githubusercontent.com/Mampiz/provenance-gate/main/docs/assets/verify-f3.gif" alt="Three admission attempts: a genuine build admitted, an unsigned image rejected, and a genuinely signed image from the wrong workflow also rejected"/></a>
+    </td>
+    <td valign="top">
 
 ### [provenance-gate](https://github.com/Mampiz/provenance-gate)
 
@@ -56,10 +61,16 @@ Outside of that: I'm from here, I speak Spanish and Catalan, and I will absolute
 
 Admission control that ties a workload to the build that produced it. Not *this image is signed*, but *this image was built by the workflow that belongs to this service*.
 
-The test that matters is the third one: an image signed for real, by the same trusted builder, from the wrong workflow — refused.
+The third attempt in that recording is the whole point: an image signed for real, by the same trusted builder, from the wrong workflow — refused anyway. A control that only catches unsigned images tells you nothing you didn't already know.
 
   </td>
-    <td width="50%" valign="top">
+  </tr>
+
+  <tr>
+    <td width="44%" valign="top">
+      <a href="https://github.com/Mampiz/webapp-operator"><img src="https://raw.githubusercontent.com/Mampiz/webapp-operator/main/docs/assets/autoscaling.gif" alt="The operator reacting to load: the HorizontalPodAutoscaler adds replicas and the disruption budget follows"/></a>
+    </td>
+    <td valign="top">
 
 ### [webapp-operator](https://github.com/Mampiz/webapp-operator)
 
@@ -71,19 +82,29 @@ Admission webhooks, Prometheus metrics, a Grafana dashboard, and scale numbers I
 
   </td>
   </tr>
+
   <tr>
-    <td width="50%" valign="top">
+    <td width="44%" valign="top">
+      <a href="https://github.com/Mampiz/idp-backstage"><img src="https://raw.githubusercontent.com/Mampiz/idp-backstage/main/docs/assets/template-form.png" alt="The Backstage scaffolder form a developer fills in to get a repository and a running workload"/></a>
+    </td>
+    <td valign="top">
 
 ### [idp-backstage](https://github.com/Mampiz/idp-backstage)
 
 `Backstage` · `Argo CD` · `GitHub Actions`
 
-An Internal Developer Platform. Fill in a form and, before you finish reading the confirmation page, you have a GitHub repo with CI *and* a live workload in Kubernetes.
+An Internal Developer Platform. Fill in that form and, before you finish reading the confirmation page, you have a GitHub repo with CI *and* a live workload in Kubernetes.
 
 My favourite part isn't the demo — it's the README section on what happens when it half-fails. Turns out that's the interesting engineering.
 
   </td>
-    <td width="50%" valign="top">
+  </tr>
+
+  <tr>
+    <td width="44%" valign="top">
+      <a href="https://github.com/Mampiz/llm-gateway"><img src="https://raw.githubusercontent.com/Mampiz/llm-gateway/main/docs/assets/streaming.gif" alt="Tokens from a Claude model streaming through the gateway in OpenAI wire format"/></a>
+    </td>
+    <td valign="top">
 
 ### [llm-gateway](https://github.com/Mampiz/llm-gateway)
 
@@ -91,12 +112,16 @@ My favourite part isn't the demo — it's the README section on what happens whe
 
 One OpenAI-compatible endpoint in front of every provider you use: routing, streaming, failover, distributed rate limiting, caching and per-provider metrics. Your client never learns which vendor answered.
 
-Started as an excuse to write concurrent Go harder than a worker-pool tutorial. Ended at v1.0.0 with a Helm chart.
+Started as an excuse to write concurrent Go harder than a worker-pool tutorial. Ended at v1.0.0 with a Helm chart and a published container.
 
   </td>
   </tr>
+
   <tr>
-    <td width="50%" valign="top">
+    <td width="44%" valign="top">
+      <a href="https://github.com/Mampiz/birdvision"><img src="https://raw.githubusercontent.com/Mampiz/birdvision/main/docs/images/image-detection.jpg" alt="The detector labelling bird species in a photograph, with confidence scores"/></a>
+    </td>
+    <td valign="top">
 
 ### [BirdVision](https://github.com/Mampiz/birdvision)
 
@@ -107,17 +132,35 @@ My final degree project at UPC, built with a local environmental association. Po
 Two-stage YOLO12 training (101 species, mAP@0.5 of 0.910 on my own validation split) and an RTMP→HLS pipeline that draws boxes on a live stream. [Live demo](https://automatic-bird-identification-syste.vercel.app).
 
   </td>
-    <td width="50%" valign="top">
+  </tr>
+
+  <tr>
+    <td colspan="2" valign="top">
 
 ### [mampiz.dev](https://github.com/Mampiz/mampiz.dev)
 
 `Astro` · `Tailwind` · `GitHub Pages`
 
-My portfolio. One static page, no client framework, a few kilobytes of inline JavaScript — and real recordings from each project instead of stock illustrations. [Have a look](https://mampiz.github.io/mampiz.dev/).
+My portfolio: one static page, no client framework, a few kilobytes of inline JavaScript — and the same real recordings you see above instead of stock illustrations. [Have a look](https://mampiz.github.io/mampiz.dev/).
 
   </td>
   </tr>
 </table>
+
+<br>
+
+## Language mix
+
+<p align="center">
+  <img src="docs/assets/languages.svg" width="860"
+       alt="Language breakdown across public repositories: Go 48.8%, Shell 12.4%, TypeScript 10.4%, Python 7.9%, JavaScript 7.2%, Astro 5.2%, Makefile 2.6%, Java 2.0%.">
+</p>
+
+<p align="center">
+  <sub>Byte counts straight from the GitHub API, regenerated weekly by
+  <a href="scripts/languages.py">a script in this repo</a> rather than a hosted stats card,
+  so it cannot break when somebody else's free tier does.</sub>
+</p>
 
 ---
 
