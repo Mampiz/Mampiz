@@ -34,7 +34,7 @@ Outside of that: I'm from here, I speak Spanish and Catalan, and I will absolute
   </tr>
   <tr>
     <td><b>Also comfortable with</b></td>
-    <td><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,react,postgres,redis,kafka,fastapi,nginx,aws,prometheus,grafana,githubactions&theme=dark" alt="TypeScript, React, Postgres, Redis, Kafka, FastAPI, Nginx, AWS, Prometheus, Grafana, GitHub Actions"/></a></td>
+    <td><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,react,astro,tailwind,postgres,redis,kafka,fastapi,nginx,aws,prometheus,grafana,githubactions&theme=dark" alt="TypeScript, React, Astro, Tailwind, Postgres, Redis, Kafka, FastAPI, Nginx, AWS, Prometheus, Grafana, GitHub Actions"/></a></td>
   </tr>
   <tr>
     <td><b>Currently learning</b></td>
@@ -50,15 +50,28 @@ Outside of that: I'm from here, I speak Spanish and Catalan, and I will absolute
   <tr>
     <td width="50%" valign="top">
 
+### [provenance-gate](https://github.com/Mampiz/provenance-gate)
+
+`Go` · `Sigstore` · `admission control`
+
+Admission control that ties a workload to the build that produced it. Not *this image is signed*, but *this image was built by the workflow that belongs to this service*.
+
+The test that matters is the third one: an image signed for real, by the same trusted builder, from the wrong workflow — refused.
+
+  </td>
+    <td width="50%" valign="top">
+
 ### [webapp-operator](https://github.com/Mampiz/webapp-operator)
 
 `Go` · `controller-runtime` · `Kubernetes`
 
-A Kubernetes operator. You write one small `WebApp` resource and it takes care of the Deployment, the Service, the autoscaler and the disruption budget forever.
+A Kubernetes operator. You write one small `WebApp` resource and it takes care of the Deployment, the Service, the autoscaler and the disruption budget — forever.
 
 Admission webhooks, Prometheus metrics, a Grafana dashboard, and scale numbers I actually measured instead of vibing.
 
   </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
 
 ### [idp-backstage](https://github.com/Mampiz/idp-backstage)
@@ -67,7 +80,18 @@ Admission webhooks, Prometheus metrics, a Grafana dashboard, and scale numbers I
 
 An Internal Developer Platform. Fill in a form and, before you finish reading the confirmation page, you have a GitHub repo with CI *and* a live workload in Kubernetes.
 
-My favourite part isn't the demo, it's the README section on what happens when it half-fails. Turns out that's the interesting engineering.
+My favourite part isn't the demo — it's the README section on what happens when it half-fails. Turns out that's the interesting engineering.
+
+  </td>
+    <td width="50%" valign="top">
+
+### [llm-gateway](https://github.com/Mampiz/llm-gateway)
+
+`Go` · `concurrency` · `Redis`
+
+One OpenAI-compatible endpoint in front of every provider you use: routing, streaming, failover, distributed rate limiting, caching and per-provider metrics. Your client never learns which vendor answered.
+
+Started as an excuse to write concurrent Go harder than a worker-pool tutorial. Ended at v1.0.0 with a Helm chart.
 
   </td>
   </tr>
@@ -78,22 +102,18 @@ My favourite part isn't the demo, it's the README section on what happens when i
 
 `YOLO12` · `FastAPI` · `React` · `AWS`
 
-My final degree project at UPC, built with a local environmental association. Point a camera at a drinking trough, or upload a video, and it tells you which bird species showed up, where and when.
+My final degree project at UPC, built with a local environmental association. Point a camera at a drinking trough — or upload a video — and it tells you which bird species showed up, where and when.
 
-Two-stage YOLO12 training (101 species, mAP@0.5 of 0.910 on my own validation split), async video jobs, and an RTMP→HLS pipeline that draws boxes on a live stream. [Live demo](https://automatic-bird-identification-syste.vercel.app).
+Two-stage YOLO12 training (101 species, mAP@0.5 of 0.910 on my own validation split) and an RTMP→HLS pipeline that draws boxes on a live stream. [Live demo](https://automatic-bird-identification-syste.vercel.app).
 
   </td>
     <td width="50%" valign="top">
 
-### [llm-gateway](https://github.com/Mampiz/llm-gateway)
+### [mampiz.dev](https://github.com/Mampiz/mampiz.dev)
 
-`Go` · `concurrency` · `Redis`
+`Astro` · `Tailwind` · `GitHub Pages`
 
-*Work in progress, don't judge.*
-
-A proxy in front of multiple model providers: one API, streaming, distributed rate limiting, failover and caching.
-
-Mostly an excuse to write concurrent Go that's harder than a worker-pool tutorial.
+My portfolio. One static page, no client framework, a few kilobytes of inline JavaScript — and real recordings from each project instead of stock illustrations. [Have a look](https://mampiz.github.io/mampiz.dev/).
 
   </td>
   </tr>
