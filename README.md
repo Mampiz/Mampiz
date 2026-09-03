@@ -1,11 +1,6 @@
 <h1 align="center">Josep Mampel Marqués</h1>
 
 <p align="center">
-  <img src="docs/assets/intro.gif" width="740"
-       alt="Terminal session: whoami — Josep Mampel Marqués, Barcelona. Day job: embedded automotive, bootloaders, AUTOSAR, diagnostics, secure boot. Night job: Kubernetes controllers in Go. Looking for platform / cloud infrastructure.">
-</p>
-
-<p align="center">
   <sub><b>Go</b> · <b>Kubernetes</b> · Platform engineering · Automotive firmware</sub>
 </p>
 
